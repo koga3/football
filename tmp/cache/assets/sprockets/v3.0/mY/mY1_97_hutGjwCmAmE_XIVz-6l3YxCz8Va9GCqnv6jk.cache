@@ -1,0 +1,11 @@
+I"„(function() {
+  var player;
+
+  player = document.getElementsByClassName('fa');
+
+  player.css({
+    color: red
+  });
+
+}).call(this);
+:ET

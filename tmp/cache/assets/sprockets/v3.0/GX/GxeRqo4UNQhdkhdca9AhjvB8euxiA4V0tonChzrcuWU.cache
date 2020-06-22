@@ -1,0 +1,11 @@
+I"ç(function() {
+  $(function() {
+    var player;
+    player = $(".fa");
+    return player.css({
+      color: red
+    });
+  });
+
+}).call(this);
+:ET

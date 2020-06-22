@@ -1,0 +1,9 @@
+I"’(function() {
+  $(function() {
+    return $("div#canvas").dblclick(function() {
+      return alert("Hello World!");
+    });
+  });
+
+}).call(this);
+:ET

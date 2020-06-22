@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FootballAnalizer2</title>
+    <title>FootballAnalyzer</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +9,29 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+ <body>
+    <header>
+      <div class="header-logo">
+        <%= link_to("FootballAnalyzer", "/") %>
+      </div>
+      <ul class="header-menus">
+        <i class="far fa-heart"></i>
+        <li>
+          <%= link_to("選手追加", "/players/new") %>
+        </li>
+        <li>
+          <%= link_to("選手配置", "/players/field") %>
+        </li>
+        <li>
+          <%= link_to("選手一覧", "/players/index") %>
+        </li>
+      </ul>
+    </header>
+    <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>

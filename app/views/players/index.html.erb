@@ -1,0 +1,10 @@
+<div class="main posts-index">
+  <div class="container">
+    <% @players.each do |player| %>
+      <div class="posts-index-item">
+        <%= link_to("#{player[:name]}", "/players/#{player[:id]}") %>
+        <p><%= player[:created_at].strftime("%Y年%-m月%-d日 %-H時%-M分") %></p>
+      </div>
+    <% end %>
+  </div>
+</div>

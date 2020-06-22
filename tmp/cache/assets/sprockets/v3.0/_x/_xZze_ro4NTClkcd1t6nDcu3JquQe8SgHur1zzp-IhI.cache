@@ -1,0 +1,11 @@
+I"�(function() {
+  $(function() {
+    var player;
+    player = $("i.fa");
+    return player.onmousedwn(function() {
+      return console.log("タップされたよ！");
+    });
+  });
+
+}).call(this);
+:ET

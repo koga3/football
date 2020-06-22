@@ -1,0 +1,12 @@
+I"|(function() {
+  var Member;
+
+  Member = (function() {
+    function Member() {}
+
+    return Member;
+
+  })();
+
+}).call(this);
+:ET
